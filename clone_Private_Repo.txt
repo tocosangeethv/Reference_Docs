@@ -1,0 +1,40 @@
+To clone the Private Repo and when we dont have https url we have to follow the below steps the keygen steps are in GitLab url
+
+To clone the Private one Repo to another Repo 
+----------------------------------------------
+
+
+ssh-keygen -t ed25519 -C "sangeetha@toco" --- Generate the public and private key
+
+cd /c/Users/SangeethaVasudevan/.ssh/ --- move to the .ssh folder
+
+cat id_ed25519 --- view the private key
+
+cat cat id_ed25519.pub --- View the public key
+
+eval $(ssh-agent -s)
+
+ssh-add id_ed25519
+
+cat ~/.ssh/known_hosts
+
+git clone git@10.212.40.4:aiq/sub-aiq-stg01.git
+
+Before that create a directory and do the clone step
+you will get the stg directory in the local then clone the destination repo
+
+git clone git@10.212.40.4:aiq/sub-aiq-prd01.git
+
+pwd - Test1 (created folder)
+
+you will get the prd directory in the local cp the contents of the stg to prd directory
+
+cp -r sub-aiq-stg01/* sub-aiq-prd01/
+
+git add .
+
+git commit -m "stgtoprd'
+
+git push
+
+
