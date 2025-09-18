@@ -1,0 +1,47 @@
+Installing Jenkins on Windows Virtual Machine
+-----------------------------------------------
+
+https://www.youtube.com/watch?v=wVUTpyvbxZ8 --- Check the video for clear installation
+
+Install windows Virtual Machine in Azure cloud. Connect to the virtual machine.
+
+Open the browser and go to Jenkins.io to download Jenkins and java-jdk 17 or 21 --- installed java-jdk_21
+
+go to browser google and type java download and select for windows machine 
+
+https://www.oracle.com/ae/java/technologies/downloads/#jdk21-windows 	
+
+Install Java from the below link
+
+https://download.oracle.com/java/21/latest/jdk-21_windows-x64_bin.msi (sha256)
+
+
+Once Installed set the JAVA_Home_path in environment variables 
+
+Press Win + R → type sysdm.cpl → Enter.
+
+Go to Advanced → click Environment Variables.
+
+Under System variables, click New:
+
+Variable name: JAVA_HOME
+
+Variable value: C:\Program Files\Java\jdk-17
+
+After installed then install Jenkins from the browser.
+
+Select the login type as Local System. Test the port and then click on next.
+
+select the JDK path --- Jenkins --- Firewall_Exception --- Will be installed on local hard drive.
+
+on the browser localhost:8080
+
+
+
+
+
+
+
+
+
+
