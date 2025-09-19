@@ -1,0 +1,20 @@
+Integrate GitHub and Jenkins
+----------------------------
+
+We have to add configurations in both GitHub and Jenkins.
+
+In Jenkins Server 
+-----------------
+
+In UI go to credentials global add secret --- give the GitHub username and password.
+
+Create the ssh keygen on the server for public and private key.
+
+Have the public key in a note pad.
+
+In GitHub
+---------
+
+Go to settings In ssh key add the generated public key.
+
+
