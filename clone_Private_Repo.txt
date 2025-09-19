@@ -3,7 +3,6 @@ To clone the Private Repo and when we dont have https url we have to follow the 
 To clone the Private one Repo to another Repo 
 ----------------------------------------------
 
-
 ssh-keygen -t ed25519 -C "sangeetha@toco" --- Generate the public and private key
 
 cd /c/Users/SangeethaVasudevan/.ssh/ --- move to the .ssh folder
@@ -17,6 +16,12 @@ eval $(ssh-agent -s)
 ssh-add id_ed25519
 
 cat ~/.ssh/known_hosts
+
+In GitLab we need to add the generated SSH public key in setting 
+
+Go to preferences of the account --- ssh keys --- add keys --- add the public key.
+
+The private key should be in the Jenkins server which is been generated.
 
 git clone git@10.212.40.4:aiq/sub-aiq-stg01.git
 
@@ -36,5 +41,6 @@ git add .
 git commit -m "stgtoprd'
 
 git push
+
 
 
